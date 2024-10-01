@@ -10,36 +10,13 @@ p {
     margin: 0;
 }
 
-footer {
-    margin-top: auto;
-    background-color: rgb(155, 98, 201);
-    -webkit-box-shadow: 0px 2px 5px 0px blueviolet;
-    -moz-box-shadow: 0px 2px 5px 0px blueviolet;
-    box-shadow: 0px 2px 15px 5px blueviolet;
+a{
+    text-decoration: none;
 
 }
 
-.footertexto {
-
-    margin-left: 60px;
-    font-size: 21px;
-}
-
-
-
-.copylogo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.textocopy {
-    flex-grow: 1;
-    text-align: center;
-}
-
-.espacio {
-    flex-grow: 1;
+a:hover{
+ color: rgb(255, 0, 0);
 }
 
 .contenedor-principal {
@@ -48,14 +25,6 @@ footer {
     flex-direction: column;
 }
 
-.contenedor_footer {
-    background-color: rgb(155, 98, 201);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
 .titulo {
     background-color: rgb(155, 98, 201);
     font-size: 30px;
@@ -69,34 +38,68 @@ footer {
 
 }
 
-.contenedor-grid {
-    display: grid;
-    grid-template-columns: 1fr 300px; /* Una columna para el texto y otra para la imagen */
-    grid-gap: 20px; /* Espacio entre la imagen y el texto */
-    padding: 20px;
-    align-items: center; /* Alinea verticalmente los elementos */
-    box-sizing: border-box;
-}
-
-.texto-grid {
-    grid-column: 1; /* Ubica el texto en la primera columna */
-    
-}
-
-.foto {
-    grid-column: 2; /* Ubica la imagen en la segunda columna */
-}
-
-.foto img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
 .navegacion {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 80px;
     font-size: 30px;
+    border-bottom: solid 1px blueviolet;
+}
+
+/* FOOTER */
+
+.container-footer footer {
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+
+footer {
+    background-color: rgb(155, 98, 201);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    -webkit-box-shadow: 0px -2px 5px 0px blueviolet;
+    -moz-box-shadow: 0px -2px 0px 0px blueviolet;
+    box-shadow: 0px -2px 15px 0px blueviolet;
+}
+
+.container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.texto-footer {
+    display: flex;
+    flex-grow: 2;
+    gap: 20px;
+
+}
+
+.logo-footer {
+    flex-grow: 1;
+}
+
+.footer-texto-uni {
+    color: black;
+}
+
+/* Seccion foto */
+
+.contenedor-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+width: 400px;
+}
+
+.foto-mia {
+
 }
