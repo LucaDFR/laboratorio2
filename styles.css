@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -10,13 +11,13 @@ p {
     margin: 0;
 }
 
-a{
+a {
     text-decoration: none;
 
 }
 
-a:hover{
- color: rgb(255, 0, 0);
+a:hover {
+    color: rgb(255, 0, 0);
 }
 
 .contenedor-principal {
@@ -52,7 +53,7 @@ a:hover{
 .container-footer footer {
     max-width: 1200px;
     margin: auto;
-    
+
 }
 
 
@@ -74,10 +75,11 @@ footer {
 }
 
 .texto-footer {
-    display: flex;
+    /* display: flex;
     flex-grow: 2;
-    gap: 20px;
-
+    gap: 20px; */
+    position: absolute;
+    text-align: center;
 }
 
 .logo-footer {
@@ -94,8 +96,191 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 30px;
+    padding: 40px;
 }
 
-.foto-mia{
-width: 400px;
+.foto-mia {
+    width: 600px;
+    padding-right: 40px;
+
+}
+
+.texto-contenedor {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.main-datos {
+    padding: 40px;
+}
+
+/* Apartado De Contacto */
+
+.formulario {
+    font-size: 30px;
+}
+
+
+label {
+    display: grid;
+    place-items: center;
+    grid-column: 1/2;
+}
+
+input {
+    font-size: 30px;
+    grid-column: 2/3;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    gap: 10px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    padding-top: 40px; 
+    align-items: center;
+    justify-items: left;
+    padding-left: 400px;
+}
+
+/* BOTON BORRAR */
+
+
+.boton-borrar {
+    width: 25%;
+    height: 100px;
+    grid-column: 3/4;
+    border-radius: 20%;
+    border-color: black;
+    border-width: 5px;
+    background-color: red;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    
+}
+
+.boton-borrar:hover{
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 1);
+    font-size: 25px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(236, 121, 121);
+    transition: background-color 0.3s ease;
+ }
+
+input, select {
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+
+/* GRID FORMULARIO */
+
+.div-eleccion {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+
+.boton-cargar {
+    background-color: #373b3a;
+    grid-column: 1/3;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: background 0.3s ease;
+    margin-top: 30px;
+}
+
+
+.boton-cargar:hover {
+    cursor: pointer;
+    transform: scale(1.2); 
+    background-color: white;
+    color: black;
+}
+
+
+
+.grid-tabla{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border: solid 1px red;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.texto-tabla{
+    border: solid 1px red;
+}
+
+.input-tabla {
+    border: solid 1px red; 
+}
+
+.texto-valor{
+    grid-column: 2/3;
+    border: solid 1px red; 
+}
+
+
+.boton {
+    background-color: #12C987;
+    grid-column: 1/3;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: background 0.3s ease;
+}
+
+.texto-boton {
+    transition: transform 0.3s ease;
+}
+
+.boton:hover .texto-boton {
+    transform: scale(1.2); 
+}
+
+
+.boton-enviar {
+    background-color: #12C987;
+    color: white;
+    padding: 30px;
+    font-size: 25px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: background 0.3s ease;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.texto-boton-enviar {
+    transition: transform 0.3s ease;
+}
+
+.boton-enviar:hover .texto-boton {
+    transform: scale(1.2); 
 }

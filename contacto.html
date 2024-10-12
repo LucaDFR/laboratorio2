@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Pagina Personal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="buil.js">
+</head>
+
+<body class="body-contacto">
+    <div class="container">
+        <header>
+            <div class="titulo">
+                <h1>Mi Pagina personal</h1>
+            </div>
+
+            <nav class="navegacion">
+                <a href="acercade.html">Biografia</a>
+                <a href="">Inicio</a>
+                <a href="">Sobre Nosotros</a>
+                <a href="contacto.html">Contactos</a>
+            </nav>
+        </header>
+
+        <form class="formulario">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" max="20" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" max="20">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="16" max="120">
+
+            <label for="telefono">Telefono:</label>
+            <input type="number" id="telefono" name="telefono">
+
+            <button type="reset" class="boton-borrar" onclick="botonDeBorrar()">X</button>
+
+            <label for="direccion">Direccion:</label>
+            <input type="text" id="direccion" name="direccion">
+
+            <label for="codigo-postal">Codigo Postal:</label>
+            <input type="number" id="codigo-postal" name="codigo-postal">
+
+            <label for="provincia">Provincia:</label>
+            <select class="nombre-provincia" id="provincia" name="provincia" multiple size="5">
+                <option value="Viedma">Viedma</option>
+                <option value="General Conesa">General Conesa</option>
+                <option value="General Roca">General Roca</option>
+                <option value="San Antonio">San Antonio</option>
+                <option value="Sierra Grande">Sierra Grande</option>
+            </select>
+
+        </form>
+        <div class="div-eleccion">
+            <div class="eleccion">
+                <label>Preferencia de contacto:</label><br>
+                <input type="radio" id="email" name="contacto" value="email" checked>
+                <label class="eleccion-1" for="email">Correo electrónico</label><br>
+
+                <input type="radio" id="postal" name="contacto" value="postal">
+                <label class="eleccion-1" for="postal">Correo postal</label><br>
+
+                <input type="radio" id="telefono" name="contacto" value="telefono">
+                <label class="eleccion-1" for="telefono">Teléfono</label><br>
+
+                <button class="boton-cargar">Cargar</button>
+            </div>
+
+
+            <div class="eleccion">
+                <label>Tipo de Suscripción:</label><br>
+                <input type="checkbox" id="Noticias" name="tipo_suscripcion" value="Noticias">
+                <label class="eleccion-1" for="Noticias">Noticias</label><br>
+
+                <input type="checkbox" id="Promociones" name="tipo_suscripcion" value="Promociones">
+                <label class="eleccion-1" for="Promociones">Promociones</label><br>
+
+                <input type="checkbox" id="Alertas" name="tipo_suscripcion" value="Alertas" checked>
+                <label class="eleccion-1" for="Alertas">Alertas</label><br>
+
+                <input type="checkbox" id="Eventos" name="tipo_suscripcion" value="Eventos">
+                <label class="eleccion-1" for="Eventos">Eventos</label><br>
+
+            </div>
+        </div>
+
+        <div class="grid-tabla">
+            <label class="texto-tabla" for="nombre">Campo</label>
+            <label class="texto-valor" for="nombre">Valor</label>
+            <label class="texto-tabla" for="nombre">Nombre</label>
+            <input class="input-tabla" type="text">
+            <label class="texto-tabla" for="apellido">Apellido</label>
+            <input class="input-tabla" type="text">
+            <label class="texto-tabla" for="email">Email</label>
+            <input class="input-tabla" type="text">
+            <label class="texto-tabla" for="telefono">Telefono</label>
+            <input class="input-tabla" type="text">
+            <label class="texto-tabla" for="edad">Edad</label>
+            <input class="input-tabla" type="text">
+
+
+        </div>
+
+        <button type="submit" class="boton-enviar"><span class="texto-boton">Enviar</span></button>
+        
+        <footer>
+            <div class="logo-footer">
+                <img src="PEDCO_Foto.png" width="250" height="" alt="PEDCO Logo">
+            </div>
+            <div class="texto-footer">
+                <p class="textocopy">2023 © | Subsecretaría de Tecnologías de la Información</p>
+                <a class="footer-texto-uni" href="https://pedco.uncoma.edu.ar/">Universidad</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
