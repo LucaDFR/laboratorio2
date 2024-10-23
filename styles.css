@@ -75,9 +75,6 @@ footer {
 }
 
 .texto-footer {
-    /* display: flex;
-    flex-grow: 2;
-    gap: 20px; */
     position: absolute;
     text-align: center;
 }
