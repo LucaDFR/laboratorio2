@@ -16,18 +16,16 @@
 
 <body class="body-contacto">
     <div class="container">
-        <header>
-            <div class="titulo">
-                <h1>Mi Pagina personal</h1>
-            </div>
-
-            <nav class="navegacion">
-                <a href="acercade.html">Biografia</a>
-                <a href="">Inicio</a>
-                <a href="">Sobre Nosotros</a>
-                <a href="contacto.html">Contactos</a>
-            </nav>
+        <header class="header">
+            <img src="image_Curza.png" alt="Logo" class="logo">
+            <h1>Mi Página Personal</h1>
         </header>
+        <nav class="navegacion">
+            <a href="acercade.html">Biografia</a>
+            <a href="index.html">Inicio</a>
+            <a href="">Sobre Nosotros</a>
+            <a href="contacto.html">Contactos</a>
+        </nav>
 
         <form class="formulario">
 
@@ -98,24 +96,27 @@
         </div>
 
         <div class="grid-tabla">
-            <label class="texto-tabla" for="nombre">Campo</label>
-            <label class="texto-valor" for="nombre">Valor</label>
-            <label class="texto-tabla" for="nombre">Nombre</label>
-            <input class="input-tabla" type="text">
-            <label class="texto-tabla" for="apellido">Apellido</label>
-            <input class="input-tabla" type="text">
-            <label class="texto-tabla" for="email">Email</label>
-            <input class="input-tabla" type="text">
-            <label class="texto-tabla" for="telefono">Telefono</label>
-            <input class="input-tabla" type="text">
-            <label class="texto-tabla" for="edad">Edad</label>
-            <input class="input-tabla" type="text">
-
-
+            <div class="texto-tabla header-tabla">Campo</div>
+            <div class="texto-tabla header-tabla">Valor</div>
+        
+            <div class="texto-tabla">Nombre</div>
+            <input class="input-tabla" type="text" placeholder="Ingresa tu nombre">
+        
+            <div class="texto-tabla">Apellido</div>
+            <input class="input-tabla" type="text" placeholder="Ingresa tu apellido">
+        
+            <div class="texto-tabla">Email</div>
+            <input class="input-tabla" type="email" placeholder="Ingresa tu email">
+        
+            <div class="texto-tabla">Teléfono</div>
+            <input class="input-tabla" type="tel" placeholder="Ingresa tu teléfono">
+        
+            <div class="texto-tabla">Edad</div>
+            <input class="input-tabla" type="number" placeholder="Ingresa tu edad">
         </div>
 
         <button type="submit" class="boton-enviar"><span class="texto-boton">Enviar</span></button>
-        
+
         <footer>
             <div class="logo-footer">
                 <img src="PEDCO_Foto.png" width="250" height="" alt="PEDCO Logo">
@@ -124,8 +125,20 @@
                 <p class="textocopy">2023 © | Subsecretaría de Tecnologías de la Información</p>
                 <a class="footer-texto-uni" href="https://pedco.uncoma.edu.ar/">Universidad</a>
             </div>
+            <button id="ascender" class="ascender">
+                <svg xmlns="http://www.w3.org/2000/svg" x-bind:width="size" x-bind:height="size" viewBox="0 0 24 24"
+                    fill="none" stroke="violet" x-bind:stroke-width="stroke" stroke-linecap="round"
+                    stroke-linejoin="round" width="24" height="24" stroke-width="2">
+                    <path
+                        d="M9 12h-3.586a1 1 0 0 1 -.707 -1.707l6.586 -6.586a1 1 0 0 1 1.414 0l6.586 6.586a1 1 0 0 1 -.707 1.707h-3.586v3h-6v-3z">
+                    </path>
+                    <path d="M9 21h6"></path>
+                    <path d="M9 18h6"></path>
+                </svg>
+            </button>
         </footer>
     </div>
 </body>
+<script src="buil.js"></script>
 
 </html>
