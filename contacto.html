@@ -16,16 +16,18 @@
 
 <body class="body-contacto">
     <div class="container">
-        <header class="header">
-            <img src="image_Curza.png" alt="Logo" class="logo">
-            <h1>Mi Página Personal</h1>
-        </header>
-        <nav class="navegacion">
-            <a href="acercade.html">Biografia</a>
-            <a href="index.html">Inicio</a>
-            <a href="">Sobre Nosotros</a>
-            <a href="contacto.html">Contactos</a>
-        </nav>
+        <div class="nav-titulo-fijo">
+            <header class="header">
+                <img src="image_Curza.png" alt="Logo" class="logo">
+                <h1>Mi Página Personal</h1>
+            </header>
+            <nav class="navegacion">
+                <a href="acercade.html">Biografia</a>
+                <a href="index.html">Inicio</a>
+                <a href="">Sobre Nosotros</a>
+                <a href="contacto.html">Contactos</a>
+            </nav>
+            </div>
 
         <form class="formulario">
 
@@ -42,7 +44,7 @@
             <input type="number" id="edad" name="edad" min="16" max="120">
 
             <label for="telefono">Telefono:</label>
-            <input type="number" id="telefono" name="telefono">
+            <input type="tel" id="telefono" name="telefono">
 
             <button type="reset" class="boton-borrar" onclick="botonDeBorrar()">X</button>
 
@@ -50,18 +52,18 @@
             <input type="text" id="direccion" name="direccion">
 
             <label for="codigo-postal">Codigo Postal:</label>
-            <input type="number" id="codigo-postal" name="codigo-postal">
+            <input type="" id="codigo-postal" name="codigo-postal">
 
             <label for="provincia">Provincia:</label>
-            <select class="nombre-provincia" id="provincia" name="provincia" multiple size="5">
-                <option value="Viedma">Viedma</option>
-                <option value="General Conesa">General Conesa</option>
-                <option value="General Roca">General Roca</option>
-                <option value="San Antonio">San Antonio</option>
-                <option value="Sierra Grande">Sierra Grande</option>
-            </select>
+            <input list="provincias" id="provincia" name="provincia" placeholder="">
+            <datalist id="provincias">
+                <option value="Viedma">
+                <option value="General Conesa">
+                <option value="General Roca">
+                <option value="San Antonio">
+                <option value="Sierra Grande">
+            </datalist>
 
-        </form>
         <div class="div-eleccion">
             <div class="eleccion">
                 <label>Preferencia de contacto:</label><br>
@@ -75,7 +77,9 @@
                 <label class="eleccion-1" for="telefono">Teléfono</label><br>
 
                 <button class="boton-cargar">Cargar</button>
+
             </div>
+            
 
 
             <div class="eleccion">
@@ -94,26 +98,58 @@
 
             </div>
         </div>
-
-        <div class="grid-tabla">
-            <div class="texto-tabla header-tabla">Campo</div>
-            <div class="texto-tabla header-tabla">Valor</div>
-        
-            <div class="texto-tabla">Nombre</div>
-            <input class="input-tabla" type="text" placeholder="Ingresa tu nombre">
-        
-            <div class="texto-tabla">Apellido</div>
-            <input class="input-tabla" type="text" placeholder="Ingresa tu apellido">
-        
-            <div class="texto-tabla">Email</div>
-            <input class="input-tabla" type="email" placeholder="Ingresa tu email">
-        
-            <div class="texto-tabla">Teléfono</div>
-            <input class="input-tabla" type="tel" placeholder="Ingresa tu teléfono">
-        
-            <div class="texto-tabla">Edad</div>
-            <input class="input-tabla" type="number" placeholder="Ingresa tu edad">
-        </div>
+    </form>
+    <table class="tabla-formulario" border="1" cellspacing="0" cellpadding="5">
+        <thead>
+            <tr>
+                <th>Campo</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nombre</td>
+                <td><input class="input-tabla" type="text" placeholder=""></td>
+            </tr>
+            <tr>
+                <td>Apellido</td>
+                <td><input class="input-tabla" type="text" placeholder=""></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input class="input-tabla" type="email" placeholder=""></td>
+            </tr>
+            <tr>
+                <td>Teléfono</td>
+                <td><input class="input-tabla" type="tel" placeholder=""></td>
+            </tr>
+            <tr>
+                <td>Edad</td>
+                <td><input class="input-tabla" type="number" placeholder=""></td>
+            </tr>
+            <tr>
+                <td>Dirección</td>
+                <td><input class="input-tabla" type="text" placeholder=""></td>
+            </tr>
+            <tr>
+                <td>Código Postal</td>
+                <td><input class="input-tabla" type="text" placeholder=""></td>
+            </tr>
+            <tr>
+                <td>Provincia</td>
+                <td>
+                    <input list="provincias" class="input-tabla" placeholder="">
+                    <datalist id="provincias">
+                        <option value="Viedma">
+                        <option value="General Conesa">
+                        <option value="General Roca">
+                        <option value="San Antonio">
+                        <option value="Sierra Grande">
+                    </datalist>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
         <button type="submit" class="boton-enviar"><span class="texto-boton">Enviar</span></button>
 
